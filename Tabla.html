@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        table, th, td {
+        border:1px solid;
+        border-collapse: collapse;
+        }
+        .Data{
+            background-color: lightgray;
+
+        }
+    </style>
+    <title>Tabla</title>
+</head>
+<body>
+    <table style="border: 2px solid;">
+        <tr>
+            <th colspan="3" class="Data">
+                Invoice #123456789
+            </th>
+            <th class="Data" colspan="1" style="width: 25%;">
+                14 January 2025
+            </th>
+        </tr>
+        <tr>
+            <td colspan="2" >
+                <p>
+                    <b>Pay to:</b><br>
+                    Acme Billing Co. <br>
+                    123 Main St. <br>
+                    Cityville, NA 12345
+                </p>
+            </td>
+            <td colspan="2" >
+                <p>
+                    <b>
+                        Customer:
+                    </b><br>
+                    john Smith<br>
+                    321 Willow Way<br>
+                    Southeast Northwesershire, MA 54321<br>
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td class="Data" style="width: 25%;"><b>Name / Description</b></td>
+            <td class="Data" style="width: 25%;"><b>Qty.</b></td>
+            <td class="Data" style="width: 25%;" ><b>@</b></td>
+            <td class="Data" style="width: 25%;" ><b>Cost</b></td>
+        </tr>
+        <tr>
+            <td>Paperclips</td>
+            <td>1000</td>
+            <td>0.01</td>
+            <td>10.00</td>
+        </tr>
+        <tr>
+            <td>Staples (box)</td>
+            <td>100</td>
+            <td>1.00</td>
+            <td>100.00</td>
+        </tr>
+        <tr>
+            <td colspan="3" class="Data"><b>Subtotal</b></td>
+            <td>110.00</td>
+        </tr>
+        <tr>
+            <td colspan="2" class="Data"><b>Tax</b></td>
+            <td>8%</td>
+            <td>8.80</td>
+        </tr>
+        <tr>
+            <td colspan="3" class="Data"><b>Grand Total</b></td>
+            <td> $118.80</td>
+        </tr>
+    </table>
+</body>
+</html>
