@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <style>
+        label{
+            padding: 10px;
+        }
+        #textos{
+            border-radius: 25px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Formulario de prueba de formularios</h1>
+    </header>
+    <article>
+        <h2>Prueba de los formularios</h2>
+        <form action="#" method="get">
+            <label for="Nombre">Nombre:</label>
+            <input type="text" placeholder="Joe" name="Nombre" id="textos">
+            <br>
+            <label for="Apellido">Apellido:</label>
+            <input type="text" placeholder="doe" name="Apellido" id="textos"><br>
+
+            <p style="padding-left: 10px;">Género:</p>
+            <label>
+                <input type="radio" name="genero" value="masculino" required> Masculino
+            </label>
+            <label>
+                <input type="radio" name="genero" value="femenino" required> Femenino
+            </label>
+            <label>
+                <input type="radio" name="genero" value="Otro" required> Otros
+            </label>
+            <br>
+            <fieldset>
+                <legend>informacion de usuario</legend>
+                <label for="correo">email:</label>
+                <input type="email" name="correo" placeholder="reanukeebs@spiff.uk" id="textos"><br>
+                <label for="contraseña">password:</label>
+                <input type="password" placeholder="contraseña" required id="textos"><br>
+                <label for="descripcion">descripcion</label>
+                <textarea name="descripcion" placeholder="escribe una descripcion" id="textos"></textarea>
+            </fieldset>
+            <input type="submit" name="Subir" value="Registrarse">
+            <input type="reset">
+        </form>
+        <form>
+            <h2>si ya estas registrado</h2>
+            <fieldset style="width: 9%;">
+            <label for="correo">email:</label>
+            <input type="email" name="correo" placeholder="reanukeebs@spiff.uk" id="textos"><br>
+            <label for="contraseña">password:</label>
+            <input type="password" placeholder="contraseña" required id="textos"><br>
+            <input type="submit" name="Subir" value="iniciar sesion">
+            <input type="reset">
+            </fieldset>
+        </form>
+    </article>
+    <footer>
+        <a href="encuesta.html"><h3>se estropeo la web</h3></a>
+    </footer>
+</body>
+</html>

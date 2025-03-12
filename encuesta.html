@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>encuesta de fallo</title>
+</head>
+<body>
+    <header>
+        <h1>reporte de fallo</h1>
+    </header>
+    <article>
+        <form action="#" method="get">
+            <fieldset style="width:fit-content;">
+                <legend>
+                    Que tipo de fallo fue
+                </legend>
+                <label for="tipo">
+                    <input type="radio" name="tipo" value="nuke" required> pone que mi usuario no existe
+                </label>
+                <label for="tipo">
+                    <input type="radio" name="tipo" value="void"> no me deja escribir la contraseña
+                </label>
+                <label for="tipo">
+                    <input type="radio" name="tipo" value="acept-no"> no me deja apretar en aceptar
+                </label>
+            </fieldset>
+            <textarea placeholder="describa brevemente los detalles de su fallo" id="descripcion" name="descripcion" rows="4" cols="50"></textarea><br>
+            <input type="checkbox" value="acepto-normal"> 
+            <label for="acepto-normal"> acepto enviar un informe de error a [blank]</label>
+            <br>
+            <input type="checkbox" value="acepto-raro">
+            <label for="acepto-raro"> acepto recibir una notificacion de [blank] cuando se solvente el error</label>
+            <br>
+            <input type="submit" value="enviar">
+        </form>
+    </article>
+</body>
+</html>
