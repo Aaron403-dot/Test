@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario 2</title>
+    <style>
+        body{
+            text-align: center;
+            align-content: center;
+            margin: auto;
+            width: 50%;
+            padding: 10px;
+            background-color: rgb(87, 87, 133);
+        }
+        fieldset{
+            border-radius: 25px;
+            background-color: lightblue;
+            border-width: 40px,solid;
+            border-color: rgb(151, 188, 201);
+            text-align: left;
+        }
+        input{
+            width:100% ;
+            border-radius: 25px;
+            size: 30px;
+            text-align: center;
+            align-items: center;
+        }
+        textarea{
+            width:100% ;
+            border-radius: 25px;
+            size: 30px;
+            text-align: center;
+            align-items: center;
+            margin-top: 10px;
+        }
+        legend{
+            font-size: larger;
+            color: rgb(59, 59, 255);
+        }
+        #chkbx{
+            width: 15%;
+            margin: auto;
+            display: inline;
+            align-items: start;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>
+            encuesta de preferencias
+        </h1>
+    </header>
+    <article>
+        <form action="#" method="get">
+            <fieldset>
+                <legend style="text-align: center;">
+                    Datos de encuestado
+                </legend>
+                <label for="nombre"> nombre</label>
+                <input type="text" name="nombre" placeholder="Nombre">
+                <br>
+                <label for="Apellido"> Apellido</label>
+                <input type="text" name="Apellido" placeholder="Apellido">
+                <br>
+                <label for="Direccion"> Direccion</label>
+                <input type="text" name="Direccion" placeholder="Direccion">
+                <br>
+                <textarea name="Description" id="Description" cols="50" rows="8" placeholder="Por favor,escriba aquí"></textarea> <br>
+
+                <label for="fecha-e" style="margin: auto;"> fecha de hoy<br></label>
+                <input type="date" id="fecha" name="fecha-e" value="1900-12-31" min="1900-12-31" max="2099-12-31" style="width: fit-content; text-align: center;">
+            </fieldset>
+            <fieldset>
+                <legend style="text-align: center;">
+                    Encuesta
+                </legend>
+                <select name="medio_transporte" id="mdt" style="width: 100%; border-radius: 25px;">
+                    <option value="automovil">automovil</option>
+                    <option value="moto">moto</option>
+                    <option value="autobus">autobus</option>
+                </select>
+                <label for="fecha-e" style="padding-left: 40%;"> fecha de nacimiento<br></label>
+                <input type="date" id="fecha" name="fecha-e" value="1900-12-31" min="1900-12-31" max="2099-12-31" style="text-align: center;">
+
+                <input type="checkbox" id="chkbx" name="ide" value="Ecplise">
+                <label for="vehicle1"> eclipse</label>
+                <input type="checkbox" id="chkbx" name="ide" value="Netbeans">
+                <label for="vehicle2"> Netbeans</label>
+                <input type="checkbox" id="chkbx" name="ide" value="Notepad">
+                <label for="vehicle3"> Notepad</label>
+                <input type="checkbox" id="chkbx" name="ide" value="IDEA">
+                <label for="vehicle3"> IDEA</label><br>
+
+                <label for="DNI"> DNI</label>
+                <input type="text" name="DNI" placeholder="1234567A">
+                <br>
+                <label for="nombre"> nombre</label>
+                <input type="text" name="nombre" placeholder="Nombre">
+                <br>
+                <label for="Apellido"> Apellido</label>
+                <input type="text" name="Apellido" placeholder="Apellido">
+                <br>
+                <label for="Email">Email</label>
+                <input type="text" name="Email" placeholder="Email"><br>
+                <label for="Hora">Hora</label>
+                <input type="time" name="Hora" value="00:00"><br>
+                <label for="colour">color favorito</label>
+                <input type="color" name="colour" value="#FFFFFF">
+            </fieldset>
+            <input type="submit" value="enviar" style="width: 50%; height: 40px;">
+            <input type="reset" value="borrar" style="width: 50%;float: right; height: 40px;">
+        </form>
+    </article>
+</body>
+</html>
