@@ -1,0 +1,14 @@
+.Caja{
+    width: 190ch;
+    height: 190ch;
+    position: relative;
+    border: 1px solid blue;
+}
+#imagen{
+    left: 820px;
+    right: 150px;
+    top: 5px;
+    bottom: 1000px;
+    height: 50%;
+    position: absolute;
+}
