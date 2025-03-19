@@ -1,0 +1,155 @@
+
+article{
+    width: 100%;
+    height: 100%;
+}
+div{
+    width: 100%;
+}
+
+@media only screen and (max-width: 600px) {
+
+    article {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        
+    }
+    #prueba1{
+        display: none;
+    }
+    #prueba2{
+        display: none;
+        background-color: rosybrown;
+    }
+    
+    #box1{
+        background-color: skyblue;
+        /* width: 100%; */
+        justify-content: center;
+        padding: 0;
+        text-align: center;
+        margin-bottom: 0;
+    }
+
+    #box2{background-color: rgb(90, 138, 157);
+        /* width: 100%; */
+        justify-content: center;
+        margin: 0;
+        text-align: center;
+    }
+
+    #box3{background-color: rgb(96, 147, 167);
+        /* width: 35em; */
+        justify-content: center;
+        margin: 0;
+        text-align: center;
+    }
+        
+
+}
+
+@media only screen and (min-width: 600px) {
+    
+    article {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        
+    }
+    #prueba1{
+        display: none;
+    }
+
+
+    #prueba3{
+        display: none;
+        background-color: gold;
+    }
+    
+    #box1{
+        background-color: rgb(255, 105, 105);
+        /* width: 35em; */
+        justify-content: center;
+        padding: 0;
+        text-align: center;
+        margin: 0;
+    }
+
+    div{
+        display: flex;
+        flex-direction: column-reverse;
+        margin-top: 50%;
+    }
+
+    #box2{background-color: red;
+        /* width: 35em; */
+        justify-content: center;
+        margin: 0;
+        text-align: center;
+    }
+
+    #box3{background-color: darkred;
+        /* width: 35em; */
+        justify-content: center;
+        margin: 0;
+        text-align: center;
+    }
+
+}
+
+@media only screen and (min-width: 900px) {
+    article {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        
+    }
+
+    #prueba3{
+        display: none;
+        background-color: rosybrown;
+    }
+
+
+    #prueba2{
+        display: none;
+        background-color: rosybrown;
+    }
+    
+    #prueba1{
+        display: flex;
+    }
+
+    #box1{
+        background-color: darkgreen;
+        /* width: 35em; */
+        justify-content: center;
+        padding: 0;
+        text-align: center;
+        margin: 0;
+    }
+
+    div{
+        margin-top: 70%;
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    #box2{background-color: green;
+        /* width: 35em; */
+        justify-content: center;
+        margin: 0;
+        text-align: center;
+    }
+
+    #box3{background-color: lightgreen;
+        /* width: 35em; */
+        justify-content: center;
+        margin: 0;
+        text-align: center;
+    }
+}
